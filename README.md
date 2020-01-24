@@ -10,7 +10,7 @@ In view board, the user should be able to view all tasks in it (and comments cou
 task).
 In view task, the user should be able to see all previous comments. 
 
-
+```
 data = {
 	user :
 	board :
@@ -53,4 +53,4 @@ comment : {
 	lastModified,
 	text
 }
-
+```
