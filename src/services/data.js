@@ -17,10 +17,6 @@ const data = {
 
 
 // APIS :
-// getBoardsByUserId
-// getTasksByBoardId
-// getCommentsByTaskId
-// getUserById
 
 //setUpdateBoard
 //setUpdateTask
