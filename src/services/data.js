@@ -4,7 +4,7 @@ import {
 	createTasks, 
 	createComments,
 } from "./dataModal";
-import persistData from "./sampleData.js";
+import persistData from "./sampleData.js/index.js";
 
 const data = {
     user : createUsers(),
