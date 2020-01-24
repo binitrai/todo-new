@@ -51,7 +51,11 @@ const getBoardsByUserId = (userId) => {
     if (boards.length === 0) {
         return returnData(false, null, NOT_FOUND);
     }
-    return returnData(true, boards);
+    let boardMap = {};
+    boards.forEach(item => {
+        boardMap[item.id] = item;
+    })
+    return returnData(true, boardMap);
 }
 
 const getTasksByBoardId = (boardId, data, withCommentCount = false) => {
@@ -80,7 +84,15 @@ const getBoardData = (boardId) => {
         return returnData(false, null, NOT_FOUND);
     }
     board = board[0];
-    board.tasks = getTasksByBoardId(boardId, data.task, true);
+    let tasks = getTasksByBoardId(boardId, data.task, true);
+    if (tasks.length) {
+        board.tasks = {};
+        tasks.forEach(task => {
+            board.tasks[task.id] = task;
+        })
+    } else  {
+        board.tasks = null;
+    }
     return returnData(true, board);
 }
 
@@ -102,6 +114,21 @@ const getTaskData = (taskId) => {
     return returnData(true, task);
 }
 
+const getCommentsDataByTaskId = (taskId) => {
+    let data = getData();
+    let comments = getCommentsByTaskId(taskId, data.comment);
+    if (comments.length) {
+        let ret = {};
+        comments.forEach((item, i) => {
+            ret[item.id] = item;
+            ret[item.id].userInfo = getUserById(item.createdBy, data.user)
+        });
+        return returnData(true, ret);
+       
+    } else  {
+        return returnData(false, null, NOT_FOUND);
+    }
+} 
 const returnData = (status, data, errMsg = false) => {
     const ret = {
         status : status,
@@ -111,4 +138,4 @@ const returnData = (status, data, errMsg = false) => {
     return ret;
 }
 
-export default getBoardsByUserId("userc5c-44-bef");
+export default getCommentsDataByTaskId("task51e-49-a61");
