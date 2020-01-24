@@ -1,0 +1,42 @@
+.tableContainer {
+    margin: 1em auto;
+    width: 90%;
+    border-collapse: collapse;
+  }
+  
+  
+  .tableContainer td {
+    border: 1px solid #d9d9d9;
+    padding: 0.5em;
+  }
+  
+  .tableContainer th{
+    background: #1565C0;
+    color: white;
+    padding: 0.5em;
+    border: 1px solid #1565C0;
+  }
+  .tableContainer .row, .tableContainer td, .tableContainer th {
+    text-align: center;
+  }
+
+  
+  @media only screen and (max-width: 767px) {
+  .tableContainer td, .tableContainer th {
+      width: auto;
+      display: block;
+      border: 0;
+    }
+  
+    .tableContainer th {
+      border-left: solid 1px #1565C0;
+      border-right: solid 1px #1565C0;
+      border-bottom: solid 1px #1565C0;
+    }
+  
+    .tableContainer td {
+      border-left: solid 1px #d9d9d9;
+      border-right: solid 1px #d9d9d9;
+      border-bottom: solid 1px #d9d9d9;
+    }
+  }

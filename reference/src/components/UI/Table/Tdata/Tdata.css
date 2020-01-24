@@ -1,0 +1,18 @@
+.edit_icon {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.edit_icon img {
+    width : 12px;
+    height: 12px;
+    cursor: pointer;
+}
+td .green {
+    color : green;
+}
+td .red {
+    color : red;
+}

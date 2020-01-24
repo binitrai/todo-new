@@ -1,0 +1,14 @@
+export const CHANGE_ROLE  = "CHANGE_ROLE";
+export const SAVE_QUANTITY  = "SAVE_QUANTITY";
+export const SHOW_HIDE_MODAL = "SHOW_HIDE_MODAL";
+export const EDIT_DATA_STATE = "EDIT_DATA_STATE";
+
+export const FETCH_INVENTORY_FAILED = "FETCH_INVENTORY_FAILED";
+export const SET_INVENTORY = "SET_INVENTORY";
+
+export const AUTH_START = 'AUTH_START';
+export const AUTH_SUCCESS = 'AUTH_SUCCESS';
+export const AUTH_FAIL = 'AUTH_FAIL';
+export const AUTH_LOGOUT = 'AUTH_LOGOUT';
+
+export const SET_AUTH_REDIRECT_PATH = 'SET_AUTH_REDIRECT_PATH';

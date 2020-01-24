@@ -1,0 +1,102 @@
+.main {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px solid #d2dce8;
+    text-align: center;
+  }
+  
+  .sign {
+    color: #475b72;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+  }
+  
+  .un {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  form.form1 {
+    line-height: 3.5;
+  }
+  
+  .pass {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  
+  .un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+  }
+  
+  .submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: #475b72;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    width: 76%;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px;
+  }
+  
+  .forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #E1BEE7;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+        border : none;
+    }
+    
+  }
+
+  /*
+  http header related ques like when we have to download something
+  git queries
+  Reatc.clone
+  Bubbling
+
+
+  happy unhappy numer
+  sum of digits
+   19 : 
+   82
+
+  */
+
