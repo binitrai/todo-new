@@ -1,0 +1,9 @@
+.NewBoard {
+    font-size: 14px;
+}
+.InputContainer{
+    margin-top: 30px;
+}
+.InputContainer:first-child {
+    margin-top: 0;
+}
